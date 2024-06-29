@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <div id="logo" class="logo-screen">
+      Image Slider
+    </div>
+
+    <div id="slider">
+        <div class="Image_Slide">
+          <img src="src/img/image1.jpg" />
+        </div>
+        <div class="Image_Slide">
+          <img src="src/img/image2.jpg" />
+        </div>
+        <div class="Image_Slide">
+          <img src="src/img/image3.jpg" />
+        </div>
+        <div class="Image_Slide">
+          <img src="src/img/image4.jpg" />
+        </div>
+        <div class="Image_Slide">
+          <img src="src/img/image5.jpg" />
+        </div>
+        <a class="prev" onclick="MoveSlides(-1)">❮</a>
+        <a class="next" onclick="MoveSlides(1)">❯</a>
+    
+    </div>
+
+    <div>
+      <span class="manual_navigation" onclick="select_Image(1)"></span>
+      <span class="manual_navigation" onclick="select_Image(2)"></span>
+      <span class="manual_navigation" onclick="select_Image(3)"></span>
+      <span class="manual_navigation" onclick="select_Image(4)"></span>
+      <span class="manual_navigation" onclick="select_Image(5)"></span>
+    </div>
+    
+  </div>
+  <div id = "timer_section">
+    <div class="timer" >
+      <button id="1" class = "" onclick="Slide_show(1)">
+        1s
+      </button>
+      <button id="2" class = "" onclick="Slide_show(2)">
+      2s
+      </button>
+      <button id="3" class = ""  onclick="Slide_show(3)">
+        3s
+      </button>
+      <button id ="4" onclick="show_timer()">
+        Custom
+        </button>
+      
+    </div>
+
+      <div class="timer">
+        <label>Set timer value :  </label>
+        <input type="number" id="timerValue" placeholder=" in sec">
+        <button onclick="set_timer()">Set</button>
+      </div>
+    </div>
+    </div>
+  
+
+
+    <footer>
+      Developed by Rahul Morya © 2024 | Connect with me on 
+
+       <a href="https://linkedin.com//in/rahulmorya" target="_blank">
+        <i class="fa fa-linkedin" style="font-size: 20px" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/raahulmorya" target="_blank">
+        <i class="fa fa-github" style="font-size: 20px"></i>
+      </a>
+     
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
