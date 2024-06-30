@@ -17,7 +17,11 @@
     </div>
 
     <div id="slider">
-        <div class="Image_Slide">
+       <div class="prev">
+         <a  onclick="MoveSlides(-1)">❮</a>
+       </div>
+      <div class = "images">
+         <div class="Image_Slide">
           <img src="src/img/image1.jpg" />
         </div>
         <div class="Image_Slide">
@@ -31,13 +35,15 @@
         </div>
         <div class="Image_Slide">
           <img src="src/img/image5.jpg" />
-        </div>
-        <a class="prev" onclick="MoveSlides(-1)">❮</a>
-        <a class="next" onclick="MoveSlides(1)">❯</a>
-    
+        </div>        
+      </div>
+      
+       <div class="next">
+         <a onclick="MoveSlides(1)">❯</a>
+       </div>    
     </div>
 
-    <div>
+    <div class= "nav">
       <span class="manual_navigation" onclick="select_Image(1)"></span>
       <span class="manual_navigation" onclick="select_Image(2)"></span>
       <span class="manual_navigation" onclick="select_Image(3)"></span>
@@ -45,7 +51,6 @@
       <span class="manual_navigation" onclick="select_Image(5)"></span>
     </div>
     
-  </div>
   <div id = "timer_section">
     <div class="timer" >
       <button id="1" class = "" onclick="Slide_show(1)">
@@ -55,7 +60,7 @@
       2s
       </button>
       <button id="3" class = ""  onclick="Slide_show(3)">
-        3s
+          3s
       </button>
       <button id ="4" onclick="show_timer()">
         Custom
@@ -64,11 +69,10 @@
     </div>
 
       <div class="timer">
-        <label>Set timer value :  </label>
+        <label>Set Interval : timer value </label>
         <input type="number" id="timerValue" placeholder=" in sec">
         <button onclick="set_timer()">Set</button>
       </div>
-    </div>
     </div>
   
     <footer>
@@ -85,3 +89,4 @@
     <script src="src/script.js"></script>
   </body>
 </html>
+<!-- <a><    logo 10%  nav 5%   timersection 10% footer 5%/a> -->

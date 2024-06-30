@@ -43,7 +43,7 @@ function Image(n) {
     nav[i].className = nav[i].className.replace(" active", "");
   }
 
-  slide[index].style.display = "block";
+  slide[index].style.display = "flex";
   nav[index].className += " active";
   console.log(`${index} is index value`);
 }
