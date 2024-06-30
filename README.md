@@ -1,6 +1,4 @@
 # Image-Slider
-Deployed on https://raahulmorya.github.io/Image-Slider/
-# Image Slider
 
 A simple and customizable image slider built with JavaScript, HTML, and CSS.
 
